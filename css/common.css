@@ -1,0 +1,6 @@
+.box {
+    display: flex;
+}
+.box div {
+    margin-right: 10px;
+}
