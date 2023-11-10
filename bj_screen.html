@@ -39,6 +39,11 @@
         button.close {
             padding-top: 30px;
         }
+
+        .large-checkbox {
+            width: 20px;
+            height: 20px;
+        }
     </style>
 </head>
 <body>
@@ -48,10 +53,11 @@
         <table class="table table-hover table-sm caption-top">
             <thead class="table-light">
             <tr>
-                <th scope="col">No.</th>
-                <th scope="col">제목</th>
-                <th scope="col">인원</th>
-                <th scope="col">마감</th>
+                <th scope="col" class="text-center">No.</th>
+                <th scope="col" class="text-center">제목</th>
+                <th scope="col" class="text-center">인원</th>
+                <th scope="col" class="text-center">현황</th>
+                <th scope="col" class="text-center">상세보기</th>
             </tr>
             </thead>
             <tbody id="raffle-list-tbody">
@@ -77,6 +83,19 @@
 
     <div class="fixed-bottom text-center">
         <button type="button" class="btn btn-primary btn-lg center-block" id="raffle-add-btn">완료</button>
+    </div>
+</div>
+<div class="container top-container" id="raffle-detail-info-div" style="display: none;">
+    <h1 class="custom-title"></h1>
+    <button type="button" class="close btn-close position-absolute top-0 end-0"></button>
+
+    <div class="table-container">
+        <table class="table table-hover table-sm caption-top">
+            <thead class="table-light" id="raffle-detail-info-thead">
+            </thead>
+            <tbody id="raffle-detail-info-tbody">
+            </tbody>
+        </table>
     </div>
 </div>
 </body>
